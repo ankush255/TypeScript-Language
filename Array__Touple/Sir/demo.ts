@@ -13,12 +13,12 @@ console.log(yourArray);           // [ "one" , "Two" ]
 
 // Touple;
 
-let array:[string , number , boolean];
-array = ["One", 23, false];
+let array1:[string , number , boolean];
+array1 = ["One", 23, false];
 
-console.log({message:array[0]});       // message : "One"
-console.log(array[1]);                 // 23
-console.log(array);                    // [ "One" , 23 , false ]
+console.log({message:array1[0]});       // message : "One"
+console.log(array1[1]);                 // 23
+console.log(array1);                    // [ "One" , 23 , false ]
 
 
 

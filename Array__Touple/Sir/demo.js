@@ -4,11 +4,11 @@ var yourArray = ["one", "Two"];
 console.log(myArray); // [ 1 , 2 , 3 , 4 ]
 console.log(yourArray); // [ "one" , "Two" ]
 // Touple;
-var array;
-array = ["One", 23, false];
-console.log({ message: array[0] }); // message : "One"
-console.log(array[1]); // 23
-console.log(array); // [ "One" , 23 , false ]
+var array1;
+array1 = ["One", 23, false];
+console.log({ message: array1[0] }); // message : "One"
+console.log(array1[1]); // 23
+console.log(array1); // [ "One" , 23 , false ]
 // Any 
 var Hello;
 function getHero() {
