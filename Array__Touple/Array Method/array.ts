@@ -142,8 +142,8 @@ console.log(iterator1.next().value);                                // [1, "b"]
 
 // include Method
 
-const fruits11:string = ["Banana", "Orange", "Apple", "Mango"];
-console.log(fruits11.includes("Mango"));                            // true
+// const fruits11:string = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits11.includes("Mango"));                            // true
 
 
 
@@ -157,6 +157,166 @@ console.log(fruits11.includes("Mango"));                            // true
 
 // const fruits13:string = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
 // console.log(fruits13.copyWitin(2, 0, 2));                      // Banana, Orange, Banana, Orange, Kiwi, Papaya
+
+
+
+
+
+
+// Sort Method
+
+const points = [40, 100, 1, 5, 25, 10];
+
+points.sort(function(a:number, b:number):number{
+				return a - b;
+});
+console.log(points);                                       // [1, 5, 10, 25, 40, 100]
+
+
+
+
+
+//  Max Method
+
+function myArrayMax(arr) {
+    return Math.max.apply(null, arr);
+}
+
+const points1:number[] = [40, 100, 1, 5, 25, 10];
+console.log(myArrayMax(points1));                         // 100
+
+
+
+
+
+// Min Method
+
+function myArrayMin(arr1) {
+    return Math.min.apply(null, arr1);
+}
+
+
+const pointS2:number[] = [40, 100, 1, -5, 25, 10];
+console.log(myArrayMin(pointS2));                       // -5
+
+
+
+
+
+// ForEach Method
+
+// const numbers:number[] = [45, 4, 9, 16, 25];
+// let txt = "";
+// const number21 = numbers.forEach(myFunction21);
+// function myFunction21(value, index, array) {
+// 	txt += value + " ";
+// }
+// console.log(number21);
+
+
+
+
+
+// Map Method
+
+const numbers1:number[] = [45, 4, 9, 16, 25];
+const numbers11 = numbers1.map(myFunction1);
+
+function myFunction1(value, index, array) {
+	return value * 2;
+}
+console.log(numbers11);                             // 90,8,18,32,50.
+
+
+
+
+
+// Filter Method
+
+const numbers3:number[] = [45, 4, 9, 16, 25];
+const over18 = numbers3.filter(myFunction2);
+
+function myFunction2(value, index, array) {
+	return value > 18;
+}
+console.log(over18);                                 // [45, 25]
+
+
+
+
+
+// Reduce Method
+
+const numbers:number[] = [45, 4, 9, 16, 25];
+const sum = numbers.reduce(function (total, val){
+			return total + val;
+}, 0);
+console.log(sum);                                              // 99
+
+
+
+
+
+// ReduceRight Method
+
+const numbers10:number[] = [45, 4, 9, 16, 25];
+const sum1 = numbers10.reduceRight(function (total, val){
+			return total + val;
+}, 0);
+console.log(sum1);                                            // 99
+
+
+
+
+
+// Every Method
+
+const numbers14:number[] = [45, 4, 9, 16, 25];
+const allOver18 = numbers14.every(function (val){
+			return val > 18;
+});
+console.log(allOver18);                                     // false
+
+
+
+
+
+// Array Some MEthod
+
+const numbers16:number[] = [45, 4, 9, 16, 25];
+const someOver18 = numbers16.some(function (val){
+			return val > 18;
+});
+console.log(someOver18);                                  // true
+
+
+
+
+
+// Find Method
+
+// const numbers18:number[] = [45, 4, 9, 16, 25];
+// const first = numbers18.find(function (val:number){
+// 			return val > 18;
+// });
+// console.log(first);                                       // 25
+
+
+
+
+
+// Find Index Method
+
+// const numbers20:number[] = [45, 4, 9, 16, 25];
+// const firstIndex = numbers20.findIndex(function (val:number){
+// 			return val > 18;
+// });
+// console.log(firstIndex);
+// 3
+
+
+
+
 
 
 
