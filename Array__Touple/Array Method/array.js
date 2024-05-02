@@ -60,7 +60,7 @@ console.log(iterator1.next().value); // [1, "b"]
 var fruits11 = ["Banana", "Orange", "Apple", "Mango"];
 console.log(fruits11.includes("Mango")); // true
 // CopyWithin Method
-// const fruits12:string = ["Banana", "Orange", "Apple", "Mango"];
-// console.log(fruits12.copyWithin(2, 0));                        // Banana, Orange, Banana, Orange
-// const fruits13:string = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
-// console.log(fruits13.copyWitin(2, 0, 2));                      // Banana, Orange, Banana, Orange, Kiwi, Papaya
+var fruits12 = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits12.copyWithin(2, 0)); // Banana, Orange, Banana, Orange
+var fruits13 = ["Banana", "Orange", "Apple", "Mango", "Kiwi"];
+console.log(fruits13.copyWitin(2, 0, 2)); // Banana, Orange, Banana, Orange, Kiwi, Papaya
